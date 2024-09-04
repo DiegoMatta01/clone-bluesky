@@ -1,0 +1,53 @@
+/* Geral */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.bluesky-social-container button, 
+.form-container form .email-container input,
+.form-container form .password-container input,
+.form-container form .birth-date-container input {
+    background-color: rgb(241, 243, 245);
+}
+
+a {
+    text-decoration: none;
+    font-size: 14px;
+}
+
+/* overwrite bootstrap */
+.p-4 {
+    padding: 2rem !important;
+}
+
+/* Main */
+
+main .steps {
+    font-size: 14px;
+    letter-spacing: 0.25px;
+    color: rgb(66, 87, 108);
+    font-weight: 500;
+    margin-bottom: 1px;
+}
+
+main h2 {
+    font-size: 26px;
+    font-weight: 600;
+}
+
+main form label {
+    font-size: 14px;
+    letter-spacing: 0.25px;
+    color: rgb(66, 87, 108);
+    font-weight: 600;
+    /* margin-bottom: 8px; */ /* Pesquisar como usar margin usando o framework */
+}
+
+/* @include media-breakpoint-up(sm) { ... }
+@include media-breakpoint-up(md) { ... }
+@include media-breakpoint-up(lg) { ... }
+@include media-breakpoint-up(xl) { ... }
+@include media-breakpoint-up(xxl) { ... } */

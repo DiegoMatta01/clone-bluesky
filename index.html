@@ -6,69 +6,110 @@
  
      <!-- Bootstrap CSS -->
      <link rel="stylesheet" href="css-bootstrap/bootstrap.min.css">
-    <title>Document</title>
+    <!--Fontawesome-->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <!-- My own CSS -->
+     <link rel="stylesheet" href="styles.css">
+    <title>Clone Bluesky</title>
 </head>
-<body>
+<body class="d-flex">
  
-    <header>
+    <header class="align-self-center d-none">
         <h1>Create Account</h1>
         <p>We're so excited to have you join us!</p>
     </header>
+    
 
-    <main>
-        <div class="main-header">
-            <p>Step 1 of 3</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <main class="p-4"> <!-- Main Start -->
+        <div class="mb-3">
+            <p class="steps">Step 1 of 3</p>
             <h2>Your account</h2>
         </div>
         <div class="form-container">
             <form>
-                <div class="bluesky-social-container">
-                    <label for="bluesky-social">Hosting Provider</label>
-                    <button id="bluesky-social">icon Bluesky Social icon</button>
+                <div class="bluesky-social-container mb-2">
+                    <label for="bluesky-social" class="mb-1">Hosting Provider</label>
+                    <button id="bluesky-social" class="btn w-100 d-flex justify-content-between align-items-center">
+                        <div class="d-flex align-items-center"><i class="fa-solid fa-globe d-inline-block align-middle"></i> Bluesky Social</div><i class="fa-solid fa-pencil"></i>
+                    </button>
                 </div>
 
-                <div class="email-container">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" placeholder="Enter your email address">
+                <div class="email-container mb-2">
+                    <label for="email" class="mb-1">Email</label>
+                    <div class="d-flex">
+                        <i class="fa-regular fa-envelope align-self-center"></i>
+                        <input type="email" class="form-control" id="email" placeholder="Enter your email address">
+                    </div>
                 </div>
-                <div class="password-container">
-                    <label for="password">Senha</label>
-                    <input type="password" id="password" placeholder="Choose your password">
+                <div class="password-container mb-2">
+                    <label for="password" class="mb-1">Password</label>
+                    <input type="password" class="form-control" id="password" placeholder="Choose your password">
                 </div>
-                <div class="birth-date-container">
-                    <label for="birth-date">Your birth date</label>
-                    <input type="date" id="birth-date">
+                <div class="birth-date-container mb-2">
+                    <label for="birth-date" class="mb-1">Your birth date</label>
+                    <input type="date" class="form-control" id="birth-date">
                 </div>
-                By creating an account you agree to the <a href="#">Terms of Service</a> and  <a href="#">Privacy Policy</a>.
-                <button>Back</button>
-                <button>Next</button>
+
+                <div class="form-text mb-4">By creating an account you agree to the <a href="#">Terms of Service</a> and  <a href="#">Privacy Policy</a>.</div>
+
+                <div class="d-flex justify-content-between">
+                <button class="btn btn-light">Back</button>
+                <button class="btn btn-primary">Next</button>
+                </div>
             </form>
         </div>
-    </main>
+        <hr>
+        <div class="footer-main">
+            <select>
+                <option>Lorem, ipsum.</option>
+                <option>Lorem, ipsum.</option>
+                <option>Lorem, ipsum.</option>
+                <option>Lorem, ipsum.</option>
+                <option>Lorem, ipsum.</option>
+                <option>Lorem, ipsum.</option>
+                <option>Lorem, ipsum.</option>
+                <option>Lorem, ipsum.</option>
+                <option>Lorem, ipsum.</option>
+                <option>Lorem, ipsum.</option>
+                <option>Lorem, ipsum.</option>
+                <option>Lorem, ipsum.</option>
+                <option>Lorem, ipsum.</option>
+                <option>Lorem, ipsum.</option>
+            </select>
+            <p class="d-inline-block ps-3">Having trouble? <a href="#">Contact support</a></p>
+        </div>
+    </main> <!-- Main End -->
 
-    <footer>
-        <select>
-            <option>Lorem, ipsum.</option>
-            <option>Lorem, ipsum.</option>
-            <option>Lorem, ipsum.</option>
-            <option>Lorem, ipsum.</option>
-            <option>Lorem, ipsum.</option>
-            <option>Lorem, ipsum.</option>
-            <option>Lorem, ipsum.</option>
-            <option>Lorem, ipsum.</option>
-            <option>Lorem, ipsum.</option>
-            <option>Lorem, ipsum.</option>
-            <option>Lorem, ipsum.</option>
-            <option>Lorem, ipsum.</option>
-            <option>Lorem, ipsum.</option>
-            <option>Lorem, ipsum.</option>
-        </select>
-        <p>Having trouble? <a href="#">Contact support</a></p>
-    </footer>
+    <!-- <script>
+        const larguraTela = window.innerWidth;
+        const alturaTela = window.innerHeight;
+        console.log(`Resolução da tela: ${larguraTela} x ${alturaTela}`);
+    </script> -->
 
 
-
-
+    <!--$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+);-->
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
