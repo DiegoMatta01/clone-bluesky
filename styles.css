@@ -1,3 +1,5 @@
+/* Author: Diego Matta */
+
 /* Geral */
 
 * {
@@ -11,6 +13,8 @@
 .form-container form .password-container input,
 .form-container form .birth-date-container input {
     background-color: rgb(241, 243, 245);
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 a {
@@ -18,12 +22,21 @@ a {
     font-size: 14px;
 }
 
+a:hover {
+    text-decoration: underline;
+}
+
 /* overwrite bootstrap */
 .p-4 {
     padding: 2rem !important;
 }
 
+
 /* Main */
+
+body {
+    min-height: 100vh;
+}
 
 main .steps {
     font-size: 14px;
@@ -38,16 +51,76 @@ main h2 {
     font-weight: 600;
 }
 
+main .form-container form div #bluesky-social:hover {
+    transition: 0s;
+    background-color: rgb(241, 243, 245, .6);  
+}
+
 main form label {
     font-size: 14px;
     letter-spacing: 0.25px;
     color: rgb(66, 87, 108);
     font-weight: 600;
-    /* margin-bottom: 8px; */ /* Pesquisar como usar margin usando o framework */
 }
 
-/* @include media-breakpoint-up(sm) { ... }
-@include media-breakpoint-up(md) { ... }
-@include media-breakpoint-up(lg) { ... }
-@include media-breakpoint-up(xl) { ... }
-@include media-breakpoint-up(xxl) { ... } */
+.email-container div,
+.password-container div,
+.birth-date-container div {
+    background-color: rgb(241, 243, 245);;
+}
+
+#back-and-next button:first-child {
+    transition: 0s;
+    background-color: #ebedee;
+}
+
+/* Footer Main */
+select {
+    font-size: 14px;
+    color: rgb(11, 15, 20, .6);
+}
+
+.footer-main p {
+    font-size: 14px;
+}
+
+
+/* MD */
+@media screen and (min-width: 768px) {
+    header {
+        display: block;
+        height: 100%;
+        background-color: #F1F3F5;
+    }
+
+    header h1 {
+        color: rgb(16, 131, 254);
+        font-size: 36px;
+        font-weight: 800;
+        text-align: right;
+    }
+
+    header h2 {
+        font-size: 18px;
+        font-weight: 500;
+        color: rgb(66, 87, 108);
+        text-align: right;
+    }
+
+    /* overwrite bootstrap */
+
+    .pe-md-5 {
+        padding-right: 5rem !important;
+    }
+    
+    .ps-md-3 {
+        padding-left: 4rem !important;
+    }
+}
+
+/* LG */
+@media screen and (min-width: 992px) {
+    header h1 {
+        font-size: 58px;
+    }
+}
